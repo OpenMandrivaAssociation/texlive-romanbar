@@ -55,3 +55,11 @@ necessary). The package also provides a predicate \ifnumeric.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0f-1
++ Revision: 759064
+- texlive-romanbar
+- texlive-romanbar
+
