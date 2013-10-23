@@ -6,7 +6,7 @@
 # catalog-version 1.0f
 Name:		texlive-romanbar
 Version:	1.0f
-Release:	1
+Release:	2
 Summary:	Write roman number with "bars"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/romanbar
@@ -55,11 +55,3 @@ necessary). The package also provides a predicate \ifnumeric.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0f-1
-+ Revision: 759064
-- texlive-romanbar
-- texlive-romanbar
-
