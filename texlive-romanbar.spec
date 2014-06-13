@@ -6,7 +6,7 @@
 # catalog-version 1.0f
 Name:		texlive-romanbar
 Version:	1.0f
-Release:	6
+Release:	7
 Summary:	Write roman number with "bars"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/romanbar
