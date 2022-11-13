@@ -1,19 +1,13 @@
-# revision 25005
-# category Package
-# catalog-ctan /macros/latex/contrib/romanbar
-# catalog-date 2012-01-02 20:05:40 +0100
-# catalog-license lppl1.3
-# catalog-version 1.0f
 Name:		texlive-romanbar
-Version:	1.0f
-Release:	11
+Version:	25005
+Release:	1
 Summary:	Write roman number with "bars"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/romanbar
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/romanbar.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/romanbar.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/romanbar.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/romanbar.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/romanbar.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/romanbar.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ prints barred roman numerals (converting arabic numerals if
 necessary). The package also provides a predicate \ifnumeric.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -48,7 +42,8 @@ necessary). The package also provides a predicate \ifnumeric.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
