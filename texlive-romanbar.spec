@@ -3,7 +3,7 @@ Version:	25005
 Release:	2
 Summary:	Write roman number with "bars"
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/romanbar
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/romanbar
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/romanbar.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/romanbar.doc.r%{version}.tar.xz
