@@ -1,6 +1,6 @@
 Name:		texlive-romanbar
-Version:	25005
-Release:	2
+Version:	73634
+Release:	1
 Summary:	Write roman number with "bars"
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/romanbar
